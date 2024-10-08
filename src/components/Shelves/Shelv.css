@@ -1,23 +1,124 @@
-.custom-scrollbar {
-    scrollbar-width: thin;
-    scrollbar-color: #cbd5e0 #edf2f7;
-  }
-  
-  .custom-scrollbar::-webkit-scrollbar {
-    height: 8px;
-  }
-  
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #cbd5e0;
+.products-wrapper {
+    padding: 40px 0;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.products-heading {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.product-list {
+    overflow: hidden;
+    width: 100%;
+    height: 530px;
+    display: flex;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+
+.product-item {
+    flex-shrink: 0;
+    width: 360px;
+    height: 490px;
+    padding: 20px;
+    border: 1px solid #ccc;
     border-radius: 10px;
-  }
-  
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: #edf2f7;
-  }
-  
-  .no-scrollbar {
-    overflow-y: hidden;
-    overflow-x: auto;
-  }
-  
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.product-item:hover {
+    transform: scale(1.060);
+}
+
+.product-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-details h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-cost {
+    color: rgb(38, 255, 0);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product-action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.add-cart-btn,
+.view-details-btn {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.like-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    border: 1px solid red;
+    padding: 8px 12px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-cart-btn:hover,
+.view-details-btn:hover {
+    background-color: #0056b3;
+}
+
+.like-btn:hover {
+    background-color: rgba(255, 0, 0, 0.367);
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.slider-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
