@@ -5,12 +5,34 @@ import skin from "../../assets/skin.png";
 import mie from "../../assets/mie.png";
 import cera from "../../assets/cera.png";
 import hair from "../../assets/hair.png";
-import "./Brand.css"
+import "./Brand.css";
+import { useRef } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+
 const Brand = () => {
+  const sliderRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollLeft -= 300;
+    }
+  };
+
+  const scrollRight = () => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollLeft += 300;
+    }
+  };
+
   return (
-    <div className="p-8 max-w-[1500px] mx-auto">
-      <h1 className="text-4xl font-bold mb-12 text-center text-gray-800">SHOP BY BRAND</h1>
-      <div className="flex space-x-6 overflow-x-auto py-4 custom-scrollbar">
+    <div className="brand-container">
+      <h1 className="brand-title">SHOP by BRAND</h1>
+
+      <button className="slider-btn left" onClick={scrollLeft}>
+        <FiChevronLeft />
+      </button>
+
+      <div className="brand-slider" ref={sliderRef}>
         {[
           { img: by, name: "BY BEAUTY BAY" },
           { img: ave, name: "AVENE" },
@@ -19,13 +41,29 @@ const Brand = () => {
           { img: mie, name: "MIELLE ORGANICS" },
           { img: cera, name: "CERAVE" },
           { img: hair, name: "HAIRMAX" },
+          { img: by, name: "BY BEAUTY BAY" },
+          { img: ave, name: "AVENE" },
+          { img: jos, name: "BEAUTY OF JOSEON" },
+          { img: skin, name: "SKIN1004" },
+          { img: mie, name: "MIELLE ORGANICS" },
+          { img: cera, name: "CERAVE" },
+          { img: hair, name: "HAIRMAX" },
+          { img: by, name: "BY BEAUTY BAY" },
+          { img: ave, name: "AVENE" },
+          { img: jos, name: "BEAUTY OF JOSEON" },
+          { img: skin, name: "SKIN1004" },
+          { img: mie, name: "MIELLE ORGANICS" },
         ].map((brand, index) => (
-          <div key={index} className="flex-shrink-0 flex flex-col items-center p-6 rounded-lg transition-all hover:scale-105">
-            <img src={brand.img} alt={brand.name} className="h-[300px] w-auto object-contain" />
-            <h1 className="text-xl font-semibold mt-4 text-gray-800">{brand.name}</h1>
+          <div key={index} className="brand-card">
+            <img src={brand.img} alt={brand.name} className="brand-image" />
+            <h1 className="brand-name">{brand.name}</h1>
           </div>
         ))}
       </div>
+
+      <button className="slider-btn right" onClick={scrollRight}>
+        <FiChevronRight />
+      </button>
     </div>
   );
 };

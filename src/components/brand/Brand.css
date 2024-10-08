@@ -1,20 +1,93 @@
+.brand-container {
+  padding: 40px;
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
 
-/* Add this in your global CSS or a relevant file */
-.custom-scrollbar::-webkit-scrollbar {
-    height: 10px;
-  }
-  
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: #e0e0e0; /* Light gray for track */
-  }
-  
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #333; /* Darker color for thumb */
-    border-radius: 10px;
-    border: 2px solid transparent; /* Adds some space around thumb */
-  }
-  
-  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Darker thumb when hovered */
-  }
-  
+.brand-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #4a4a4a;
+}
+
+
+.brand-slider {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-btn.left {
+  left: 10px;
+}
+
+.slider-btn.right {
+  right: 10px;
+}
+
+
+.brand-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.brand-slider::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  border-radius: 10px;
+}
+
+.brand-slider::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+
+.brand-card {
+  flex-shrink: 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.brand-card:hover {
+  transform: scale(1.05);
+}
+
+.brand-image {
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-name {
+  margin-top: 16px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4a4a4a;
+}

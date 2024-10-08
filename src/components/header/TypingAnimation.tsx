@@ -45,7 +45,7 @@ const TypingAnimation: React.FC = () => {
     }, [displayedText, isDeleting, phraseIndex]);
 
     return (
-        <h2 className="text-lg text-[28px] font-bold">
+        <h2 className="text-lg text-[26px] font-bold">
             {displayedText}<span className="blinking-cursor">|</span>
         </h2>
     );

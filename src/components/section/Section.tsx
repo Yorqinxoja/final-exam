@@ -1,6 +1,6 @@
 import imgss from "../../assets/imgss.png";
 import { FiArrowRight } from "react-icons/fi";
-import "./section.css"; // Import custom CSS
+import "./section.css";
 
 const Section = () => {
   return (
