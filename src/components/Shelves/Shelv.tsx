@@ -7,7 +7,7 @@ import { addToCart } from "../../redux/slices/cartSlices";
 import { likeProduct } from "../../redux/slices/LikeSlices";
 import { RootState } from '../../redux/type';
 import { useNavigate } from "react-router-dom";
-import "./Shelf.css";
+import "./Shelv.css";
 
 const Products = () => {
     const navigate = useNavigate();
