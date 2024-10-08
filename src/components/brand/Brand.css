@@ -1,0 +1,20 @@
+
+/* Add this in your global CSS or a relevant file */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 10px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #e0e0e0; /* Light gray for track */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #333; /* Darker color for thumb */
+    border-radius: 10px;
+    border: 2px solid transparent; /* Adds some space around thumb */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker thumb when hovered */
+  }
+  

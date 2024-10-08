@@ -1,0 +1,66 @@
+.video-container {
+    position: relative;
+    height: 700px; /* Umumiy balandlik */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937ae; /* Gray-900 */
+    margin-top: 7rem; /* mt-28 */
+  }
+  
+  .video-container video {
+    position: absolute;
+    inset: 0; /* video'ni joylashish */
+    width: 100%;
+    height: 700px; /* video balandligi */
+    object-fit: cover; /* video o'lchamlari */
+  }
+  
+  .video-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.232);
+    opacity: 0.5; /* Overlay uchun opacity */
+  }
+  
+  .mute-button {
+    position: absolute;
+    z-index: 20;
+    bottom: 1.25rem; /* bottom-5 */
+    right: 1.25rem; /* right-5 */
+    background-color: #4b5563; /* gray-800 */
+    padding: 0.75rem; /* p-3 */
+    border-radius: 9999px; /* rounded-full */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* shadow-lg */
+    color: white;
+    font-size: 1.25rem; /* text-xl */
+    transition: background-color 0.3s; /* transition */
+  }
+  
+  .mute-button:hover {
+    background-color: #374151; /* hover:bg-gray-700 */
+  }
+  
+  .banner-text {
+    position: relative;
+    z-index: 10; /* z-10 */
+    text-align: center;
+    color: white;
+  }
+  
+  .banner-title {
+    font-size: 2.5rem; /* text-4xl */
+    font-weight: bold; /* font-bold */
+    margin-bottom: 1rem; /* mb-4 */
+  }
+  
+  .banner-description {
+    font-size: 1.125rem; /* text-lg */
+    margin-bottom: 1.5rem; /* mb-6 */
+  }
+  
+
+.video-container{
+    margin-top: 190px;
+}
