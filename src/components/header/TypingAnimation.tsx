@@ -19,7 +19,6 @@ const TypingAnimation: React.FC = () => {
         const textLength = displayedText.length;
 
         if (isDeleting) {
-            // O'chirish jarayoni
             if (textLength > 0) {
                 const timeoutId = setTimeout(() => {
                     setDisplayedText(currentPhrase.substring(0, textLength - 1));
