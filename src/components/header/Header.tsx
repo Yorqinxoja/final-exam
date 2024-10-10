@@ -16,13 +16,13 @@ const Header: React.FC = () => {
 
   return (
     <div>
-
       <header className="header">
         <div className="promo-banner">
           <h1>
             70€ sarf qilganda tanlangan buyumlarda 15% chegirma oling: <span>YAY</span>
           </h1>
         </div>
+
         <div className="header-container">
           <div className="header-logo">
             <Link to="/">
@@ -35,14 +35,18 @@ const Header: React.FC = () => {
           </div>
 
           <div className="header-icons">
-            <Link to="/cart">
+            <Link to="/cart" className="header-link">
               <GiShoppingCart />
               <span>{cart}</span>
             </Link>
-            <Link to="/like">
+            <Link to="/like" className="header-link">
               <FcLike />
               <span>{like}</span>
             </Link>
+            <Link to="/products" className="header-link">
+              <button className="product-button">Category</button>
+            </Link>
+
             <select value={currency} onChange={(e) => dispatch(setCurrency(e.target.value))}>
               <option value="USD">USD</option>
               <option value="UZS">UZS</option>
@@ -55,3 +59,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
