@@ -13,7 +13,7 @@ import { AiFillEye } from "react-icons/ai";
 import "./products.css";
 
 const Products = () => {
-    const [likedProducts, setLikedProducts] = useState<number[]>([]); // State to track liked products
+    const [likedProducts, setLikedProducts] = useState<number[]>([]);
     const navigate = useNavigate();
     const { data, isLoading, error } = useProductQuery();
     const dispatch = useDispatch();
@@ -66,10 +66,10 @@ const Products = () => {
                         <div className="product-info">
                             <h3>{product.name}</h3>
                             <p>{product.category}</p>
-                            <p className="product-price">{formatPrice(product.price)}</p>
+                            <p className="product-real-price">{formatPrice(product.price)}</p>
                             <p className="product-description">{product.description}</p>
                         </div>
-                        <div className="product-actions">
+                        <div className="product-buttons">
                             <button onClick={() => handleAddToCart(product)} className="add-to-cart">
                                 <BiCartAdd className="cart-icon" />
                                 Add to card
