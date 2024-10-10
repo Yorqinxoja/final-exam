@@ -1,4 +1,3 @@
-import imgss from "../../assets/imgss.png";
 import { FiArrowRight } from "react-icons/fi";
 import "./section.css";
 
@@ -15,7 +14,7 @@ const Section = () => {
         </span>
       </div>
       <div className="image-container">
-        <img src={imgss} alt="Beauty Bay Boxes" className="image" />
+        <img src="https://i.gifer.com/VPng.gif" alt="Beauty Bay Boxes" className="image" />
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const BodyCare = () => {
 
       <div className="flex flex-col items-center text-center bg-white p-6 ">
         <img
-          src="https://images.ctfassets.net/eoaaqxyywn6o/4beh2XCXNyiu5GIMWQ0p6y/8e1b1c779564cc5d2feafb78fc351bb7/Trading_Trio_ROW-NO_DR_JART.jpg"
+          src="https://i.gifer.com/4XL6.gif"
           alt="Body Care Product"
           className="w-full h-full object-cover rounded-t-lg"
         />
@@ -25,7 +25,7 @@ const BodyCare = () => {
         <p className="text-gray-600 mt-2">
           Make way for clearer, calmer skin with body care newbies from Acnemey, The Ordinary, and more.
         </p>
-        <button className="mt-4 text-white text-white py-2 px-6 transition">
+        <button className="mt-4 bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 transition">
           Shop Now
         </button>
       </div>
