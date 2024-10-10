@@ -1,0 +1,91 @@
+.liked-products-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.liked-products-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.liked-product-card {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.liked-product-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.liked-product-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.liked-product-category {
+    color: #666;
+}
+
+.liked-product-price {
+    color: #e63946;
+    font-weight: bold;
+}
+
+.liked-product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.liked-product-delete-button {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.liked-product-delete-button:hover {
+    background-color: #ff1c1c;
+}
+
+.no-liked-products-message {
+    text-align: center;
+    color: #666;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.loading-gif {
+    width: 100px;
+    height: auto;
+}
+
+.loading-text {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}

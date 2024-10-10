@@ -1,8 +1,8 @@
 import Home from "./routes/home/Home";
 import { Route, Routes } from "react-router-dom";
-import Cart from "./routes/cart/Cart";
+import Cart from "./routes/card/Card";
 import Like from "./routes/like/Like";
-import Deatels from "./routes/details/Deatels";
+import Deatels from "./routes/details/Details";
 import MainComponent from "./components/loading/MainComponent";
 
 function App() {
