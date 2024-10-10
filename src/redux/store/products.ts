@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { api } from "../api";
 import cartReducer from "../slices/cartSlices";
 import likeReducer from "../slices/LikeSlices";
-import currencyReducer from "../slices/currensySlice";
+import currencyReducer from "../slices/currencySlice";
 
 const store = configureStore({
     reducer: {

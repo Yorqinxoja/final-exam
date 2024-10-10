@@ -119,3 +119,7 @@
     font-weight: 700;
     text-align: center;
 }
+
+.currency-selector{
+    padding: 10px;
+}

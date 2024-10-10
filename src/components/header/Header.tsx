@@ -1,7 +1,7 @@
 import { FcLike } from "react-icons/fc";
 import { GiShoppingCart } from "react-icons/gi";
 import { useDispatch, useSelector } from "react-redux";
-import { setCurrency } from "../../redux/slices/currensySlice";
+import { setCurrency } from "../../redux/slices/currencySlice";
 import { Link } from 'react-router-dom';
 import beauty from "../../assets/beauty.png";
 import { RootState } from "../../redux/type";

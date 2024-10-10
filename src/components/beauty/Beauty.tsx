@@ -12,7 +12,7 @@ const Beauty = () => {
   };
 
   const handleShopNow = () => {
-    navigate('/products'); 
+    navigate('/products');
   };
 
   if (isLoading) return <p className="text-center py-4">LOADING...</p>;
@@ -32,7 +32,7 @@ const Beauty = () => {
           <p className="text-gray-600 mb-6 text-[14px] leading-relaxed">
             Looking for five-star formulas, minus the price tag? From skincare essentials to makeup must-haves and results-driven haircare, BY BEAUTY BAY has everything you need to discover your next best obsession.
           </p>
-          <button 
+          <button
             onClick={handleShopNow}
             className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
           >
@@ -58,8 +58,8 @@ const Beauty = () => {
               <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
               <p className="text-sm text-gray-700 mb-4 line-clamp-2">{product.description}</p>
 
-              <button 
-                onClick={() => handleViewDetails(product.id)} 
+              <button
+                onClick={() => handleViewDetails(product.id)}
                 className="text-blue-500 underline text-sm mb-4 inline-block hover:text-blue-600 cursor-pointer transition duration-200"
               >
                 Buy now
