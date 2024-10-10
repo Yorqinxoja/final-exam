@@ -6,6 +6,7 @@ import Products from '../../components/products/Products'
 import Section from '../../components/section/Section'
 import Shelf from '../../components/Shelves/Shelv'
 import BodyCare from  "../../components/BodyCare/BodyCare"
+import Footer from  "../../components/footer/Footer"
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Shelf/>
         <Beauty/>
         <BodyCare/>
+        <Footer/>
       
     </div>
   )

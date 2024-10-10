@@ -2,7 +2,7 @@ export interface Product {
     id: number;
     brand: string;
     name: string;
-    price: string; 
+    price: string;
     price_sign: string | null;
     currency: string | null;
     image_link: string;
@@ -15,23 +15,22 @@ export interface Product {
     liked?: boolean;
     key?: number;
     description_html?: string;
-    
 }
 
 export interface CurrencyState {
-    selected: string; 
+    selected: string;
 }
 
 export interface CartState {
-    products: Product[]; 
+    products: Product[];
 }
 
 export interface LikeState {
-    likedProducts: number[]; 
+    likedProducts: number[];
 }
 
 export interface RootState {
-    currency: CurrencyState; 
-    cart: CartState; 
-    like: LikeState; 
+    currency: CurrencyState;
+    cart: CartState;
+    like: LikeState;
 }

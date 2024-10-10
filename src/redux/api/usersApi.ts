@@ -5,7 +5,7 @@ export const authApi = api.injectEndpoints({
   endpoints: (build) => ({
     product: build.query<Product[], void>({
       query: () => ({
-        url:"/products.json",
+        url: "/products.json",
       })
     }),
 
@@ -15,9 +15,7 @@ export const authApi = api.injectEndpoints({
       }),
       providesTags: ["BRANDS"],
     }),
-    
-      
   }),
 });
 
-export const { useProductQuery, useViewdeatesQuery  } = authApi;
+export const { useProductQuery, useViewdeatesQuery } = authApi;

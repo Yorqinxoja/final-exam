@@ -1,0 +1,129 @@
+.footer-container {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    width: 380px;
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-list li:hover {
+    color: #0073e6;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+
+.footer-arrow {
+    padding: 12.5px 10px;
+    background-color: #0073e6;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-icon {
+    font-size: 18px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 38px;
+}
+
+.footer-icon:hover {
+    color: #0073e6;
+}
+
+.footer-divider {
+    margin: 40px 0;
+    border-color: #ddd;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-text-bottom {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.footer-payments {
+    display: flex;
+    gap: 65px;
+}
+
+.payment-icon {
+    height: 40px;
+}
